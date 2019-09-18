@@ -35,6 +35,10 @@ _Spec 1: The price is calculated by the number of people_
   _Input: $10.55 x 2_
   _Output: $21.10_
 
+_Spec 2: The movie options display below_
+  _Input: "Hardcore Henry"_
+  _Output: Hardcore Henry_
+
 ### License
 
 MIT License
