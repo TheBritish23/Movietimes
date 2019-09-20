@@ -4,8 +4,13 @@ function Audience() {
   this.currentId = 0
 }
 
+//business logic for movies
+function movies(changE, moviE) {
+  this.peoplE = peoplE;
+  this.moviE = moviE;
+}
 
-//business logic for Movies
+
 
 // User Interface Logic
 function showAudience(contactId) {
