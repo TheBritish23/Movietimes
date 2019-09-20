@@ -10,9 +10,10 @@ Audience.prototype.addMovies = function(contact) {
 }
 
 //business logic for Movies
-function movies(changE, moviE) {
+function movies(changE, moviE, timE) {
   this.peoplE = peoplE;
   this.moviE = moviE;
+  this.timE = timE;
 }
 
 
@@ -22,9 +23,9 @@ function movies(changE, moviE) {
 function showAudience(contactId) {
   var movie = auDience.findContact(contactId);
   $("#show-contact").show();
-  $(".number-people").html(movie.firstName);
-  $(".cinema").html(movie.lastName);
-  $(".money-change").html(movie.phoneNumber);
+  $(".number-people").html(movie.peoplE);
+  $(".cinema").html(movie.moviE);
+  $(".time").html(movie.timE);
 }
 
 
