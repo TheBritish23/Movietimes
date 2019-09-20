@@ -9,15 +9,17 @@ Audience.prototype.addTickets = function(contact) {
   this.tickets.push(contact);
 }
 
+AddressBook.prototype.assignId = function() {
+  this.currentId += 1;
+  return this.currentId;
+}
+
 //business logic for Tickets
 function tickets(changE, moviE, timE) {
   this.peoplE = peoplE;
   this.moviE = moviE;
   this.timE = timE;
 }
-
-
-
 
 // User Interface Logic
 function showAudience(contactId) {
