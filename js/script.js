@@ -4,7 +4,12 @@ function Audience() {
   this.currentId = 0
 }
 
-//business logic for movies
+Audience.prototype.addMovies = function(contact) {
+  contact.id = this.assignId();
+  this.movies.push(contact);
+}
+
+//business logic for Movies
 function movies(changE, moviE) {
   this.peoplE = peoplE;
   this.moviE = moviE;
@@ -12,9 +17,10 @@ function movies(changE, moviE) {
 
 
 
+
 // User Interface Logic
 function showAudience(contactId) {
-  var movie = addressBook.findContact(contactId);
+  var movie = auDience.findContact(contactId);
   $("#show-contact").show();
   $(".number-people").html(movie.firstName);
   $(".cinema").html(movie.lastName);

@@ -1,12 +1,12 @@
 # _Movietimes_
 
-#### _{Brief description of application}, 9/18/2019_
+#### _Choose a movie and see how much it costs, 9/18/2019_
 
 #### By _**Soroush Azizi**_
 
 ## Description
 
-_{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_
+_This is a webpage where you can choose what movie, number of people going, and time._
 
 ## Setup/Installation Requirements
 
