@@ -4,7 +4,7 @@ function Audience() {
   this.currentId = 0
 }
 
-Audience.prototype.addTickets = function(contact) {
+Audience.prototype.addTickets = function(Tickets) {
   contact.id = this.assignId();
   this.tickets.push(contact);
 }
@@ -35,8 +35,8 @@ function tickets(changE, moviE, timE) {
 // User Interface Logic
 var audience = new Audience();
 
-function showAudience(contactId) {
-  var movie = auDience.findContact(contactId);
+function showAudience(audienceId) {
+  var movie = auDience.findContact(audienceId);
   $("#show-contact").show();
   $(".number-people").html(movie.peoplE);
   $(".film").html(movie.moviE);
