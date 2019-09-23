@@ -14,6 +14,17 @@ AddressBook.prototype.assignId = function() {
   return this.currentId;
 }
 
+AddressBook.prototype.findTickets = function(id) {
+  for (var x=0; x < this.Tickets.length; x++) {
+    if (this.Tickets[x]) {
+      if (this.Tickets[x].id == id) {
+        return this.Tickets[x];
+      }
+    }
+  };
+  return false;
+}
+
 //business logic for Tickets
 function tickets(changE, moviE, timE) {
   this.peoplE = peoplE;
@@ -22,12 +33,15 @@ function tickets(changE, moviE, timE) {
 }
 
 // User Interface Logic
+var audience = new Audience();
+
 function showAudience(contactId) {
   var movie = auDience.findContact(contactId);
   $("#show-contact").show();
   $(".number-people").html(movie.peoplE);
-  $(".cinema").html(movie.moviE);
+  $(".film").html(movie.moviE);
   $(".time").html(movie.timE);
+  var buttons = $("#buttons");
 }
 
 function attachMoviesListeners() {
