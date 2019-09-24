@@ -58,6 +58,9 @@ $(document).ready(function() {
     var inputtedtime = $("input#new-timE").val();
     $("input#new-peoplE").val("");
     $("input#new-moviE").val("");
-    $("input#new-timE").val("")
+    $("input#new-timE").val("");
+    var newTickets = new Tickets(inputtedNumberPeople, inputtedfilm, inputtedtime);
+    audience.addTickets(newTickets);
+    displayTicketDetails(audience);
   })
-})
+ });
