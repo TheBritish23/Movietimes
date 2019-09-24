@@ -50,5 +50,14 @@ function attachMoviesListeners() {
 
 
 $(document).ready(function() {
+  attachContactListeners();
   $("form#showtime").submit(function(event) {
     event.preventDefault()
+    var inputtedNumberPeople = $("input#new-peoplE").val();
+    var inputtedfilm = $("input#new-moviE").val();
+    var inputtedtime = $("input#new-timE").val();
+    $("input#new-peoplE").val("");
+    $("input#new-moviE").val("");
+    $("input#new-timE").val("")
+  })
+})
