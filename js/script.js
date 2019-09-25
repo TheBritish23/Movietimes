@@ -66,8 +66,8 @@ $(document).ready(function() {
   $("form#showtime").submit(function(event) {
     event.preventDefault()
     var inputtedNumberPeople = $("input#peoplE").val();
-    var inputtedfilm = $("input#filM").val();
-    var inputtedtime = $("input#timE").val();
+    var inputtedfilM = $("input#filM").val();
+    var inputtedtimE = $("input#timE").val();
     $("input#peoplE").val("");
     $("input#filM").val("");
     $("input#timE").val("");
