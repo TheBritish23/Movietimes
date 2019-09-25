@@ -57,7 +57,7 @@ function showAudience(audienceId) {
   var movie = auDience.findContact(audienceId);
   $("#show-contact").show();
   $(".number-people").html(movie.peoplE);
-  $(".film").html(movie.moviE);
+  $(".film").html(movie.filM);
   $(".time").html(movie.timE);
   var buttons = $("#buttons");
 }
