@@ -4,10 +4,10 @@ function Audience() {
   this.currentId = 0
 }
 
-//Audience.prototype.addTickets = function(Tickets) {
-  //tickets.id = this.assignId();
-  //this.tickets.push(tickets);
-//}
+Audience.prototype.newTickets = function(tickets) {
+  tickets.id = this.assignId();
+  this.tickets.push(tickets);
+}
 
 Audience.prototype.assignId = function() {
   this.currentId += 1;
@@ -72,9 +72,11 @@ $(document).ready(function() {
     $("input#filM").val("");
     $("input#timE").val("");
     var newTickets = new Tickets(inputtedNumberPeople, inputtedfilM, inputtedtimE);
-    var ticketPrice = newTickets.pricetag()
-    console.log(ticketPrice);
-    //audience.addTickets(newTickets);
+    var pricetag = newTickets.pricetag()
+    $('#output').append('<p> Price: ' + pricetag + '</p>');
+    $('#output').append('<p> filM: ' + inputtedfilM + '</p>');
+    $('#output').append('<p> timE: ' + inputtedtimE + '</p>');
+    //audience.newTickets(addTickets);
     //displayTicketDetails(audience);
   })
  })
