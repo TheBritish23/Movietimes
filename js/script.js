@@ -71,7 +71,7 @@ $(document).ready(function() {
     $("input#peoplE").val("");
     $("input#filM").val("");
     $("input#timE").val("");
-    var newTickets = new Tickets(inputtedNumberPeople, inputtedfilm, inputtedtime);
+    var newTickets = new Tickets(inputtedNumberPeople, inputtedfilM, inputtedtimE);
     var ticketPrice = newTickets.pricetag()
     console.log(ticketPrice);
     //audience.addTickets(newTickets);
