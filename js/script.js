@@ -26,9 +26,9 @@ Audience.prototype.findTickets = function(id) {
 }
 
 //business logic for Tickets
-function Tickets(peoplE, moviE, timE) {
+function Tickets(peoplE, filM, timE) {
   this.peoplE = peoplE;
-  this.moviE = moviE;
+  this.filM = filM;
   this.timE = timE;
 }
 
