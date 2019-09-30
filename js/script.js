@@ -74,8 +74,8 @@ $(document).ready(function() {
     var newTickets = new Tickets(inputtedNumberPeople, inputtedfilM, inputtedtimE);
     var pricetag = newTickets.pricetag()
     $('#output').append('<p> Price: ' + pricetag + '</p>');
-    $('#output').append('<p> filM: ' + inputtedfilM + '</p>');
-    $('#output').append('<p> timE: ' + inputtedtimE + '</p>');
+    $('#output').append('<p> film: ' + inputtedfilM + '</p>');
+    $('#output').append('<p> time: ' + inputtedtimE + '</p>');
     //audience.newTickets(addTickets);
     //displayTicketDetails(audience);
   })
