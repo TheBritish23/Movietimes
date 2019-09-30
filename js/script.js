@@ -73,9 +73,9 @@ $(document).ready(function() {
     $("input#timE").val("");
     var newTickets = new Tickets(inputtedNumberPeople, inputtedfilM, inputtedtimE);
     var pricetag = newTickets.pricetag()
-    $('#output').append('<p> Price: ' + pricetag + '</p>');
-    $('#output').append('<p> film: ' + inputtedfilM + '</p>');
-    $('#output').append('<p> time: ' + inputtedtimE + '</p>');
+    $('#output').append('<p> Price: $'+ pricetag + '</p>');
+    $('#output').append('<p> Film: ' + inputtedfilM + '</p>');
+    $('#output').append('<p> Time: ' + inputtedtimE + '</p>');
     //audience.newTickets(addTickets);
     //displayTicketDetails(audience);
   })
